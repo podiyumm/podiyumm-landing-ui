@@ -52,7 +52,7 @@ transition="scale-transition"
 transition="scale-transition"
           width="300" />
             <v-card-actions>
-              <v-btn text>
+              <v-btn text :href=musicianUrl>
                 Musician
               </v-btn>
             </v-card-actions>
@@ -88,3 +88,14 @@ transition="scale-transition"
 
 
 </template>
+
+<script>
+export default {
+  name: "LandingTiles",
+  data() {
+    return {
+      musicianUrl: process.env.VUE_APP_MUSICIAN_URL
+    };
+  }
+};
+</script>
