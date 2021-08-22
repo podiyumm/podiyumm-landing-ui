@@ -68,7 +68,7 @@ export default {
       musicianUrl: process.env.VUE_APP_MUSICIAN_URL,
       presenterUrl: process.env.VUE_APP_PRESENTER_URL,
       songbookUrl: process.env.VUE_APP_SONGBOOK_URL,
-      peojectorUrl: process.env.VUE_APP_MUSICIAN_URL
+      peojectorUrl: process.env.VUE_APP_PROJECTOR_URL
     };
   }
 };
