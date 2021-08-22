@@ -8,7 +8,7 @@
 transition="scale-transition"
           width="100%"/>
             <v-card-actions>
-              <v-btn text>
+              <v-btn :href=peojectorUrl target="_blank">
                 Projector
               </v-btn>
             </v-card-actions>
@@ -21,7 +21,7 @@ transition="scale-transition"
 transition="scale-transition"
           width="100%" />
             <v-card-actions>
-              <v-btn text :href=musicianUrl>
+              <v-btn :href=musicianUrl target="_blank">
                 Musician
               </v-btn>
             </v-card-actions>
@@ -33,7 +33,7 @@ transition="scale-transition"
 transition="scale-transition"
           width="100%" />
             <v-card-actions>
-              <v-btn text>
+              <v-btn :href=presenterUrl target="_blank">
                 Presenter
               </v-btn>
             </v-card-actions>
@@ -46,7 +46,7 @@ transition="scale-transition"
 transition="scale-transition"
           width="100%" />
             <v-card-actions>
-              <v-btn text>
+              <v-btn :href=songbookUrl target="_blank">
                 Songbook
               </v-btn>
             </v-card-actions>
@@ -56,7 +56,6 @@ transition="scale-transition"
           </v-row>
 
     </v-container>
-<!--  </v-card>-->
 
 
 </template>
@@ -66,7 +65,10 @@ export default {
   name: "LandingTiles",
   data() {
     return {
-      musicianUrl: process.env.VUE_APP_MUSICIAN_URL
+      musicianUrl: process.env.VUE_APP_MUSICIAN_URL,
+      presenterUrl: process.env.VUE_APP_PRESENTER_URL,
+      songbookUrl: process.env.VUE_APP_SONGBOOK_URL,
+      peojectorUrl: process.env.VUE_APP_MUSICIAN_URL
     };
   }
 };
