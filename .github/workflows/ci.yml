@@ -1,4 +1,4 @@
-name: ms-covid-data-loader CI
+name: podiyumm-landing-ui CI
 
 on:
   push:
